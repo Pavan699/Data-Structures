@@ -5,6 +5,7 @@
 @Last Modified time: None
 @Title : PermutationsOfList : print all permutations of the list  
 '''
+from itertools import permutations
 def permute(lst,front=0):
     """
     Description:
@@ -15,15 +16,9 @@ def permute(lst,front=0):
         None
     """
     try:
-        # base condition
-        if front >= len(lst):
-            print(lst)
-            return
-        for i in range(front ,len(lst)):
-            lst[front], lst[i] = lst[i] ,lst[front]
-            permute(lst,front+1)
-            lst[front], lst[i] = lst[i] ,lst[front]
-            
+        permute_list = list(permutations(lst))
+        print(permute_list)
+
     except Exception as e:
         print(e)
 
