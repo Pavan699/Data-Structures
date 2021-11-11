@@ -6,7 +6,7 @@
 @Last Modified time: None
 @Title : SortedTupleList : Print the list in sorted manner with respect to 2nd tuple element  
 '''
-def sum_of_all():
+def tuple_sort():
     """
     Description:
         This Function print the list in sorted manner with respect to 2nd tuple element
@@ -27,4 +27,4 @@ def sum_of_all():
         print(e)
 
 if __name__ == "__main__":
-    sum_of_all()
+    tuple_sort()
