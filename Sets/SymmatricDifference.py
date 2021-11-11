@@ -3,26 +3,25 @@
 @Date: 2021-11-11 12:30
 @Last Modified by: Pavan Nakate
 @Last Modified time: None
-@Title : DifferenceSet  
+@Title : SymmetricDifference  
 '''
-def difference_sets():
+def symmetric_difference():
     """
     Description:
-        This Function prints the element from set1 which are not in set2
+        This Function prints the element from both the sets which are not unique
     Parameter:
         None
     Return:
         None
     """
     try:
-        #You can define set in two types
         num_set1 = {1,2,3,4,5}
         num_set2 = {1,6,3,0,5,9}
         
-        print("Difference Set : ",num_set1 - num_set2)
+        print(" Symmentric Difference is : ",num_set1.symmetric_difference(num_set2))
         
     except Exception as e:
         print(e)
 
 if __name__ == "__main__":
-    difference_sets()
+    symmetric_difference()
