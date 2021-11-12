@@ -20,6 +20,14 @@ def tuple_sort():
         sample_list = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
         print("Tuples List : ",sample_list)
         def last(n):
+            """
+            Description:
+                This Function returns last key of the tuple 
+            Parameter:
+                n as the tuple
+            Return:
+                returns the last item(-1)
+            """
             return n[-1]
         print("Sorted list : ",sorted(sample_list,key=last))
         
