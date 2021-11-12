@@ -20,7 +20,7 @@ def remove_positions():
         print("Before : ",colors)
         colors.remove('Red')
         colors.remove('Pink')
-        colors.remove('Yellow')
+        colors.remove('Yellow')        
         print("After : ",colors) 
 
     except Exception as e:
